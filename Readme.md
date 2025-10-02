@@ -20,3 +20,26 @@ Hvis du kun vil udskrive timer og minutter af en LocalTime kan du bruge
 
 ### Opgave 2
 
+Nu da I har lært om private og public modifierne, så skal I lave attributterne i Hero og
+Monster klassen private.  
+
+Dette betyder at metoderne ikke længere fungerer. Lav getters og sætters, så de fungerer igen.  
+
+I stedet for at lave getters og sætters kan du vælge at lave metoder der er mere informative.
+
+For eksempel kunne man lave en metode med følgende signatur.
+
+    public boolean isAlive()
+
+### Opgave 3
+
+### Opgave 6*
+
+Lav Pigs opgaven fra afleveringsopgaven igen, denne gang skal I dog bruge jeres
+nyerhvervede viden og lave en Player klasse, der holder styr på de informationer der er
+relevant for en spiller.
+
+Lav også en Die klasse, der repræsenterer en terning.  
+
+Nu vi kender til klasser kan vi også bruge Random klassen til at generere tilfældige tal. 
+
