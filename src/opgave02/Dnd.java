@@ -6,14 +6,16 @@ public class Dnd {
     public static void main(String[] args) {
         Hero drWho = new Hero(1000, 40, 75, "Dr. Who", "his", "sonic screwdriver");
         Monster darlek = new Monster(200, 100, 10, "darlek", "shoots death ray");
+        System.out.println("Darlek have: " + darlek.getLifePoints() + " health");
+        System.out.println("Dr. Who have: " + drWho.getLifePoints() + " health" + "\n");
         fight(drWho, darlek);
     }
 
     public static void fight(Hero hero, Monster monster) {
-        while (hero.lifePoints > 0 && monster.lifePoints > 0) {
+        while (hero.getLifePoints() > 0 && monster.getLifePoints() > 0) {
             int roll = rollD100();
             hero.attacks(roll, monster);
-            if (monster.lifePoints > 0) {
+            if (monster.getLifePoints() > 0) {
                 roll = rollD100();
                 monster.attacks(roll, hero);
             }
